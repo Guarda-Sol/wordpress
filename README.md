@@ -1,5 +1,4 @@
-# readme
-Repositório para armazenar o readme do trabalho da AWS
+Diretivas para configuração de 2 wordpress apontando para um mesmo banco de dados.
 
 #MYSQL
 Criar uma instância do mysql no lightsail
