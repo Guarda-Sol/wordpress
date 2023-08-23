@@ -22,7 +22,8 @@ Fazer uma alteração de informação em um IP e acessar com o outro para ver se
 No lightsail, em networks, criar um load balancer.
 Apontar para as duas instâncias do wordpress
 
-# CRIAR PÁGINA NO WORDPRESS COM LEITURA DE DADOS EM UMA INSTÂNCIA DO POSTGRES
+# CRIAMOS UMA PÁGINA NO WORDPRESS COM LEITURA DE DADOS EM UMA INSTÂNCIA DO POSTGRES
+## PASSOS PARA ESTA CONFIGURAÇÃO
 No diretório do tema do wordpress, criar um arquivo para fazer o procedimento desejado 
 Criamos o arquivo bitnami/wordpress/wp-content/themes/twentytwentythree/devops/get.php com o conteúdo:
 ```
