@@ -64,4 +64,5 @@ add_shortcode('custom_template', 'custom_template_shortcode');
 No arquivo `/opt/bitnami/php/etc/ph
 p.ini` habilitar a extensão: `extension=pdo_pgsql`
 
+# Criar página para exibição dos dados
 No wordpress, foi criada uma página e adicionado um shortcode referenciando o shortcode criado em functions.php: [custom_template] 
