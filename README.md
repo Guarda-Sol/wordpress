@@ -60,4 +60,8 @@ function custom_template_shortcode() {
 add_shortcode('custom_template', 'custom_template_shortcode');
 ```
 
+# Habilitar biblioteca para postgres
+No arquivo `/opt/bitnami/php/etc/ph
+p.ini` habilitar a extensão: `extension=pdo_pgsql`
+
 No wordpress, foi criada uma página e adicionado um shortcode referenciando o shortcode criado em functions.php: [custom_template] 
