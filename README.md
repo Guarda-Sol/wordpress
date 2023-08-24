@@ -1,4 +1,4 @@
-Diretivas para configuração de 2 wordpress apontando para um mesmo banco de dados.
+Diretivas para configuração de duas instâncias Wordpress apontando para um mesmo banco de dados.
 
 # MYSQL
 Criar uma instância do mysql no lightsail
@@ -9,7 +9,7 @@ O host estará em Endpoint
 
 Foi criada uma base (wordpress) neste mysql para instalar instâncias do wordpress
 
-# WORDPRESS
+## WORDPRESS
 Criar duas instâncias do wordpress no ligthsail.
 As instâncias foram acessadas por ssh.
 Acessar /opt/bitnami/wordpress/wp-config.php e configurar os dados do mysql criado acima.
@@ -18,12 +18,12 @@ IP/admin ou IP/wp-amin
 A senha que foi configurada para nossa equipe está em um doc do drive do Teddy.
 Fazer uma alteração de informação em um IP e acessar com o outro para ver se a mudança surtiu efeito nos dois (mostrando que os dois apontam para um mesmo banco)
 
-# LOAD BALANCER
+## LOAD BALANCER
 No lightsail, em networks, criar um load balancer.
 Apontar para as duas instâncias do wordpress
 
-# CRIAMOS UMA PÁGINA NO WORDPRESS COM LEITURA DE DADOS EM UMA INSTÂNCIA DO POSTGRES
-## PASSOS PARA ESTA CONFIGURAÇÃO
+## CRIAMOS UMA PÁGINA NO WORDPRESS COM LEITURA DE DADOS EM UMA INSTÂNCIA DO POSTGRES
+### PASSOS PARA ESTA CONFIGURAÇÃO
 No diretório do tema do wordpress, criar um arquivo para fazer o procedimento desejado 
 Criamos o arquivo bitnami/wordpress/wp-content/themes/twentytwentythree/devops/get.php com o conteúdo:
 ```
